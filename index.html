@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#02689c">
+  <meta name="description" content="Dunas: descubra passeios de buggy pelos litorais do Rio Grande do Norte e da Paraíba.">
+  <title>Dunas — Explore o litoral do seu jeito</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="svg-symbols" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h3a3 3 0 0 0 3-3V9a3 3 0 0 1 3-3"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-2h6l2 2h3v10H4Z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 7.5 7 10 4-2.5 7-5.5 7-10V6Z"/><path d="m9 12 2 2 4-5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+  </svg>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Dunas, início"><span class="logo-space" aria-hidden="true"><img src="assets/logo-dunas.webp" width="512" height="512" alt="" decoding="async"></span><strong>Dunas</strong></a>
+    <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+      <a href="#inicio" data-i18n="navHome">Início</a>
+      <a href="#sobre" data-i18n="navAbout">Sobre nós</a>
+      <a href="#passeios" data-i18n="navTours">Passeios</a>
+      <a href="#contato" data-i18n="navContact">Contatos</a>
+    </nav>
+    <div class="header-actions">
+      <button class="language-toggle" type="button" id="language-toggle" aria-label="Switch language to English">EN-US</button>
+      <a class="header-cta" href="#download"><span data-i18n="downloadApp">Baixar o app</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+      <button class="menu-toggle" type="button" id="menu-toggle" aria-label="Abrir menu" aria-controls="main-nav" aria-expanded="false"><svg class="icon"><use href="#i-menu"/></svg></button>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="kicker"><span></span><span data-i18n="heroKicker">EXPLORE O RIO GRANDE DO NORTE</span></p>
+        <h1><span data-i18n="heroTitle">O litoral que você sonha.</span><br><em data-i18n="heroTitleAccent">Do seu jeito.</em></h1>
+        <p class="hero-text" data-i18n="heroBody">Conectamos você aos melhores bugueiros para viver paisagens inesquecíveis com liberdade, segurança e a praticidade de um app.</p>
+        <div class="download-buttons">
+          <button class="store-button" type="button" data-store="apple" aria-label="App Store — em breve"><span class="store-mark" aria-hidden="true">●</span><span><small data-i18n="appleIntro">Baixe na</small>App Store</span></button>
+          <button class="store-button" type="button" data-store="google" aria-label="Google Play — em breve"><span class="play-mark" aria-hidden="true">▶</span><span><small data-i18n="googleIntro">Disponível no</small>Google Play</span></button>
+        </div>
+        <div class="hero-trust"><span><svg class="icon"><use href="#i-shield"/></svg><span data-i18n="trustDrivers">Bugueiros parceiros</span></span><span><svg class="icon"><use href="#i-camera"/></svg><span data-i18n="trustMoments">Experiências únicas</span></span></div>
+      </div>
+      <div class="hero-visual" aria-label="Vídeo de paisagens de Genipabu, sem áudio">
+        <video class="hero-media" autoplay muted loop playsinline preload="metadata" aria-label="Paisagens de Genipabu" disablepictureinpicture>
+          <source src="assets/genipabu-hero.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução deste vídeo.
+        </video>
+        <div class="floating-card"><strong data-i18n="nextDestination">Seu próximo destino</strong><small>Natal → Genipabu</small></div>
+      </div>
+    </section>
+
+    <section class="about section" id="sobre">
+      <div class="section-heading"><p class="kicker"><span></span><span data-i18n="aboutKicker">SOBRE NÓS</span></p><h2><span data-i18n="aboutTitle">A ponte entre você e a</span> <em data-i18n="aboutAccent">melhor experiência.</em></h2></div>
+      <div class="about-grid">
+        <div class="about-image" aria-label="Vídeo sobre a Dunas, sem áudio">
+          <video class="section-media about-media" autoplay muted loop playsinline preload="metadata" aria-label="Vídeo sobre a Dunas" disablepictureinpicture>
+            <source src="assets/about-dunas.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução deste vídeo.
+          </video>
+        </div>
+        <div class="about-content">
+          <p class="lead"><span data-i18n="aboutLeadBefore">A </span><span class="brand-highlight">Dunas</span><span data-i18n="aboutLeadAfter"> nasceu para tornar simples o encontro entre quem quer explorar e quem conhece cada caminho.</span></p>
+          <p data-i18n="aboutBody">Nossa missão é conectar turistas e bugueiros locais por meio da tecnologia, valorizando profissionais da região e criando passeios autênticos pelo litoral potiguar.</p>
+          <div class="values">
+            <article><b>01</b><div><h3 data-i18n="value1Title">Conexão local</h3><p data-i18n="value1Text">Profissionais que conhecem cada curva, duna e história do RN.</p></div></article>
+            <article><b>02</b><div><h3 data-i18n="value2Title">Liberdade</h3><p data-i18n="value2Text">Roteiros com paradas personalizáveis, respeitando o seu ritmo.</p></div></article>
+            <article><b>03</b><div><h3 data-i18n="value3Title">Segurança</h3><p data-i18n="value3Text">Experiências planejadas conforme as condições e disponibilidade.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tours section" id="passeios">
+      <div class="section-heading tours-heading"><div><p class="kicker"><span></span><span data-i18n="tourKicker">PASSEIOS</span></p><h2><span data-i18n="tourTitle">Dois estados. Quatro roteiros.</span><br><em data-i18n="tourAccent">Infinitas memórias.</em></h2></div><p data-i18n="tourIntro">Explore roteiros inesquecíveis pelos litorais do Rio Grande do Norte e da Paraíba.</p></div>
+      <div class="tour-toolbar"><div class="carousel-controls" aria-label="Controles do carrossel"><button id="carousel-prev" type="button" aria-label="Passeios anteriores">←</button><button id="carousel-next" type="button" aria-label="Próximos passeios">→</button></div></div>
+      <div class="tour-list" id="tour-list" aria-label="Roteiros de buggy" tabindex="0"></div>
+      <div class="tour-note"><svg class="icon"><use href="#i-shield"/></svg><p><strong data-i18n="tourNoteTitle">Experiências conduzidas por bugueiros parceiros.</strong><br><span data-i18n="tourNoteBody">Paradas e trajetos podem variar conforme as condições locais, a segurança e a modalidade escolhida.</span></p></div>
+    </section>
+
+    <section class="app-cta section" id="download"><div class="cta-copy"><p class="kicker kicker-light"><span></span><span data-i18n="ctaKicker">SUA AVENTURA COMEÇA AQUI</span></p><h2><span data-i18n="ctaTitle">O litoral potiguar</span><br><span data-i18n="ctaAccent">na palma da sua mão.</span></h2><p data-i18n="ctaBody">Conheça a Dunas, escolha seu roteiro e conecte-se a bugueiros locais para uma experiência inesquecível.</p><div class="download-buttons download-light"><button class="store-button" type="button" data-store="apple" aria-label="App Store — em breve"><span class="store-mark" aria-hidden="true">●</span><span><small data-i18n="appleIntro">Baixe na</small>App Store</span></button><button class="store-button" type="button" data-store="google" aria-label="Google Play — em breve"><span class="play-mark" aria-hidden="true">▶</span><span><small data-i18n="googleIntro">Disponível no</small>Google Play</span></button></div><p class="availability-note" data-i18n="comingSoon">Aplicativo em preparação. Links de download serão disponibilizados no lançamento.</p></div><div class="phone-frame" aria-label="Prévia visual do aplicativo Dunas"><img class="app-preview-media" src="assets/dunas-app-preview.webp" width="1536" height="1024" alt="Prévia visual do aplicativo Dunas em um smartphone"></div></section>
+
+    <section class="contact section" id="contato"><div class="section-heading"><p class="kicker"><span></span><span data-i18n="contactKicker">CONTATOS</span></p><h2 data-i18n="contactTitle">Vamos conversar?</h2><p data-i18n="contactBody">Tem dúvidas sobre a Dunas ou precisa de ajuda? Nosso time está pronto para atender você.</p></div><div class="contact-grid"><div class="contact-row"><svg class="icon"><use href="#i-mail"/></svg><span><small>E-MAIL</small><strong data-i18n="contactPending">Canal em preparação</strong></span><span class="contact-status" data-i18n="soon">EM BREVE</span></div><div class="contact-row"><svg class="icon"><use href="#i-arrow"/></svg><span><small>WHATSAPP</small><strong data-i18n="contactPending">Canal em preparação</strong></span><span class="contact-status" data-i18n="soon">EM BREVE</span></div></div></section>
+  </main>
+  <footer><div class="footer-main"><div class="brand footer-brand"><span class="logo-space" aria-hidden="true"><img src="assets/logo-dunas.webp" width="512" height="512" alt="" decoding="async"></span><strong>Dunas</strong></div><p data-i18n="footerTagline">Descubra o litoral do Rio Grande do Norte de um jeito novo.</p><span class="footer-coming" data-i18n="footerSocial">Redes sociais em breve</span></div><div class="footer-bottom"><span>© <span id="copyright-year">2026</span> Dunas. <span data-i18n="rights">Todos os direitos reservados.</span></span><span data-i18n="footerLegal">Política de privacidade e termos de uso serão disponibilizados antes do lançamento.</span></div></footer>
+  <div class="modal-backdrop" id="modal-backdrop" hidden><section class="modal-window" id="modal-window" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1"><div class="modal-header"><div><p class="tour-eyebrow" id="modal-eyebrow"></p><h2 id="modal-title"></h2></div><button class="modal-close" id="modal-close" type="button" aria-label="Fechar janela">×</button></div><div id="modal-body"></div></section></div>
+  <div class="toast" role="status" aria-live="polite" id="toast" hidden></div>
+</body>
+</html>
